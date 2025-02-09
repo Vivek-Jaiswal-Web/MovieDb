@@ -1,0 +1,91 @@
+/* Movie Detail Page */
+.movie-detail {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .movie-header {
+    display: flex;
+    gap: 20px;
+    background-color: rgb(65, 65, 65);
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .movie-header img {
+    width: 250px;
+    border-radius: 8px;
+  }
+  
+  .movie-info {
+    flex: 1;
+  }
+  
+  .movie-info h1 {
+    margin-bottom: 10px;
+  }
+  
+  .movie-info p {
+    margin: 5px 0;
+  }
+
+  /* Cast Section */
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .cast-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 12px 0;
+    background-color: rgb(65, 65, 65);
+    border-radius: 10px;
+  }
+  
+  .cast-card {
+    text-align: center;
+    min-width: 120px;
+  }
+  
+  .cast-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+
+  /* Responsive Movie Details */
+  @media (max-width: 815px) {
+    .movie-header{
+      background-color: rgb(82, 109, 130);
+    }
+    .cast-list{
+      background-color: rgb(82, 109, 130);
+    }
+  }
+  @media (max-width: 768px) {
+    .movie-header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .movie-header img {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+
+  /* Responsive Cast Section */
+  @media (max-width: 500px) {
+    .cast-card img {
+      width: 80px;
+      height: 80px;
+    }
+  }

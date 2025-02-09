@@ -1,0 +1,10 @@
+.search-font{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1.6rem;
+}
+@media (max-width: 815px) {
+    .search-font{
+        font-size: 18px;
+    }
+}
